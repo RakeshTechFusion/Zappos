@@ -1,0 +1,30 @@
+.carousel {
+  /* border: 2px solid black; */
+  margin: 30px;
+  margin-top: 50px;
+  margin-bottom: 40px;
+}
+.carousel h1{
+  font-size: 28px;
+}
+.slick-arrow.slick-prev,
+.slick-arrow.slick-next {
+  background: rgb(133, 120, 120);
+  width: 37px;
+  height: 64px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  z-index: 1;
+}
+.slick-prev{
+    left: 0;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+.slick-next{
+    right: 0;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
