@@ -9,6 +9,7 @@ import { MdOutlineShoppingCart } from "react-icons/md";
 import { RiArrowDropDownFill } from "react-icons/ri";
 
 export const Navbar = ({cartToggle,setCartToggle}) => {
+  let CartData = JSON.parse(localStorage.getItem("Cart")) || [];
   console.log(cartToggle)
   return (
     <nav>
@@ -41,10 +42,15 @@ export const Navbar = ({cartToggle,setCartToggle}) => {
           <button>SEARCH</button>
         </div>
         <div>
-          <button onClick={()=>setCartToggle(true)}>
-            <MdOutlineShoppingCart style={{ width: "20px", height: "40px" }} /> {""} 
-            MY CART
-          </button>
+          { CartData.length!==0 ? <button style={{backgroundColor:"lightgreen"}}  onClick={()=>setCartToggle(true)}>
+              <MdOutlineShoppingCart style={{ width: "20px", height: "40px" }} /> {CartData.length} {CartData.length===1 ? "ITEM IN CART" :"ITEMS IN CART" }
+            </button>
+            :
+            <button onClick={()=>setCartToggle(true)}>
+              <MdOutlineShoppingCart style={{ width: "20px", height: "40px" }} /> MY CART
+            </button>
+          }
+          
         </div>
       </div>
       {/* the dropdown starts */}

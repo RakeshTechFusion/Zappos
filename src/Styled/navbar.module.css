@@ -52,7 +52,8 @@ input + button:hover {
   margin-right: 35%;
 }
 .searchNav > div:last-child {
-  width: 12%;
+  width: auto;
+  
 }
 .searchNav > div:last-child button {
   background: transparent;
@@ -60,6 +61,8 @@ input + button:hover {
   color: rgb(0, 57, 83);
   border-radius: 4px;
   width: 100%;
+  padding-left: 15px;
+  padding-right: 15px;
   font-weight: 600;
 }
 .searchNav > div:last-child button:hover {
