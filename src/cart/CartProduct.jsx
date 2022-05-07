@@ -1,20 +1,22 @@
-import React from 'react'
-import { ProdCart, ProdSelect } from '../Styled/cartSyled'
+import React from 'react';
+import { RemoveButton, ProdCart, ProdSelect } from '../Styled/cartSyled'
 
-export const CartProduct = () => {
+export const CartProduct = ({cartData})=> {
+   console.log(cartData)
+   
   return (
     <ProdCart>
         <div style={{backgroundColor:"black"}}>
-            <img style={{height:"147px", width:"110px"}} src='https://m.media-amazon.com/images/I/51qNWpZCFHL._AC_SR736,920_.jpg' alt="p1"/>
+            <img style={{border:"1px solid pink", height:"145px", width:"110px"}} src={cartData.img} alt={cartData.name}/>
         </div>
         <div>
-            <p style={{fontSize:"15px", fontWeight:"bold", lineHeight:"8px"}}>LAUREN Ralph Lauren</p>
-            <p style={{fontSize:"14px", fontWeight:"bold", lineHeight:"8px"}}>Foiled Jersey Cocktail Dress</p>
-            <p style={{lineHeight:"8px"}}>Color: Desert Rose | Size: 4</p>
+            <p style={{fontSize:"15px", fontWeight:"bold", lineHeight:"8px"}}>{cartData.name}</p>
+            <p style={{fontSize:"14px", fontWeight:"bold", lineHeight:"8px"}}>{cartData.type}</p>
         </div>
         <div>
-            <p style={{fontWeight:"bold"}}>$175.00</p>
+            <p style={{fontWeight:"bold",fontSize:"20px"}}>$ {cartData.price}</p>
             <ProdSelect>
+                <option value="remove">Remove</option>
                 <option value="1">1</option>
                 <option value="2">2</option>
                 <option value="3">3</option>
@@ -23,11 +25,11 @@ export const CartProduct = () => {
                 <option value="6">6</option>
                 <option value="7">7</option>
                 <option value="8">8</option>
-                <option value="remove">Remove</option>
+               
             </ProdSelect>
             <br/>
             <br/>
-            <button>Remove</button>
+            <RemoveButton>REMOVE</RemoveButton>
         </div>
         </ProdCart>
   )

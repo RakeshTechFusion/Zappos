@@ -10,15 +10,16 @@ export const CartSidebar=styled.div`
     padding: 25px;
     position:fixed;
     min-height: 100vh;
-    transition: all ease-in-out 0.1s;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    transition: all ease-in-out 0.3s;
 
     &.expand{
-        transition: all ease-in-out 0.1s;
+        transition: all ease-in-out 0.3s;
         right:0;
     }
 
     &.shrink{
-        transition: all ease-in-out 0.1s;
+        transition: all ease-in-out 0.3s;
         right:-550px;
     }
 `
@@ -67,6 +68,7 @@ export const EmptyImage=styled.div`
                 font-weight:bold;
                 border:none;
                 border-radius:5px;
+                transition: all ease-in-out 0.3s;
             }
             button:hover{
                 background-color:#3366cc;
@@ -80,14 +82,14 @@ export const ProdCart=styled.div`
         display:flex;
         flex-direction:row;
         gap:20px;
-        margin-top:20px;
-
+        margin-top:10px;
+        justify-content:space-around;
 
 `
 export const ProdSelect=styled.select`
         width:70px;
         height:40px;
-        padding:10px;
+        padding:0;
         border:1px solid purple;
         border-radius:5px;
         text-align:center;
@@ -98,3 +100,66 @@ export const ProdSelect=styled.select`
         }
 
 `
+
+export const CheckoutButtonDiv=styled.div`
+margin-left:-4vh;
+position:fixed;
+height:100px; 
+margin-top:auto;
+background-color:rgb(245,245,245);
+width:100%;
+bottom:0;
+display:block; 
+padding:20px;
+`;
+export const CheckoutButton1=styled.button`
+border:2px solid black;
+border-radius:5px;
+background:transparent;
+height:40px;
+font-weight:bold;
+color:#2F4F4F;
+width:120px;
+font-size:15px;
+transition: all ease-in-out 0.3s;
+&:hover{
+    background-color:#3366cc;
+    border:2px solid #3366cc;
+    color:white;
+    transition: all ease-in-out 0.3s;
+}
+`
+
+export const CheckoutButton2=styled.button`
+border:none;
+border-radius:5px;
+background:transparent;
+background-color:#00FA9A;
+margin-left:12%;
+font-weight:bold;
+color:#2F4F4F;
+width:200px;
+font-size:15px;
+height:40px;
+transition: all ease-in-out 0.3s;
+&:hover{
+    background-color:#98FB98;
+    transition: all ease-in-out 0.3s;
+}
+`;
+
+export const RemoveButton=styled.button`
+
+    font-weight:bold;
+    color:rgb(88,88,88);
+    text-decoration:none;
+    font-size:14px;
+    background:transparent;
+    text-decoration:underline;
+    border:none;
+    margin-top:-50px;
+    &:hover{
+        color:black;
+    }
+
+`;
