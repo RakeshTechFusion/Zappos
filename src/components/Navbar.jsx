@@ -42,7 +42,7 @@ export const Navbar = ({cartToggle,setCartToggle}) => {
         </div>
         <div>
           <button onClick={()=>setCartToggle(true)}>
-            <MdOutlineShoppingCart style={{ width: "20px", height: "40px" }} /> {""} 
+            <MdOutlineShoppingCart style={{ width: "20px", height: "40px" }} /> 
             MY CART
           </button>
         </div>
