@@ -7,15 +7,34 @@ import sneakers from "./Layout/Sneaker";
 export const SneakerPro = () => {
   const [high, setHigh] = useState(false);
   const [low, setLow] = useState(false);
-  const handleChange = (e) => {};
+  const [filterData, setfilterData] = useState(sneakers);
+
+  const handleChange = (e) => {
+    let value = e.target.value;
+    if (value === "under50") {
+      let newData = sneakers.filter((elem) => elem.price < 50);
+      setfilterData([...newData]);
+      console.log(filterData);
+    } else if (value === "under100") {
+      let newData = sneakers.filter((elem) => elem.price < 100);
+      setfilterData([...newData]);
+      console.log(newData);
+    } else if (value === "under200") {
+      let newData = sneakers.filter((elem) => elem.price < 200);
+      setfilterData([...newData]);
+      console.log(newData);
+    } else if (value === "above200") {
+      let newData = sneakers.filter((elem) => elem.price >= 200);
+      setfilterData([...newData]);
+      console.log(newData);
+    }
+  };
   const handleSort = (e) => {
     if (e.target.value === "h2l") {
       let sneakerdata = sneakers.sort((a, b) => {
         return b.price - a.price;
       });
-      //  console.log(topdata,"Women's");
       setHigh(true);
-      //  sorted_data(dispatch,topdata)
     }
     if (e.target.value === "l2h") {
       let sneakerdata = sneakers.sort((a, b) => {
@@ -23,10 +42,8 @@ export const SneakerPro = () => {
       });
       setLow(true);
       setHigh(false);
-      //  sorted_data(dispatch,topdata)
     }
-    // console.log(topdata,"Women's");
-  };
+  }
   return (
     <>
       <ProductTopdiv>
@@ -102,7 +119,7 @@ export const SneakerPro = () => {
           </div>
         </div>
         <div className="topsdiv">
-          {sneakers.map((item) => {
+          {filterData.map((item) => {
             return (
               <WomenCard
                 imageurl={item.imageurl}

@@ -4,6 +4,7 @@ import { Cart } from "./components/Cart";
 import { Navbar } from "./components/Navbar";
 
 
+
 function App() {
   const [cartToggle,setCartToggle]=useState(false);
 
@@ -13,7 +14,6 @@ function App() {
     <Navbar cartToggle={cartToggle} setCartToggle={setCartToggle}/>
     <Cart cartToggle={cartToggle} setCartToggle={setCartToggle}/>
  
-    
 
   </div>;
 }

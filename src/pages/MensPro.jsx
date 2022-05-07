@@ -28,8 +28,6 @@ export const MensPro = () => {
       setfilterData([...newData]);
       console.log(newData);
     }
-
-    console.log(e.target.value);
   };
 
   const handleSort = (e) => {
@@ -60,7 +58,12 @@ export const MensPro = () => {
           <ProductSortdiv>
             <h5>SortBy</h5>
             <select
-              style={{ height: "50px", borderRadius: "10px" }}
+              style={{
+                height: "50px",
+                borderRadius: "10px",
+                fontSize: "20px",
+                lineHeight: "18px",
+              }}
               onClick={handleSort}
             >
               <option value="rev">Relevance</option>
@@ -76,12 +79,25 @@ export const MensPro = () => {
 
       <ProductContainer>
         <div>
-          <div style={{ padding: "2%" }}>
+          <div
+            style={{
+              borderTop: "1px solid gray",
+              borderBottom: "1px solid gray",
+              padding: "2%",
+            }}
+          >
             <div style={{ padding: "2%" }}>
               <h5>Price</h5>
               <hr />
-              <div>
-                <form>
+              <div
+               style={{
+                    lineHeight: "50px",
+                    wordSpacing: "5px",
+                    color: "#003953",
+                    fontSize: "20px",
+                   
+                  }}>
+               
                   <div>
                     <input
                       type="radio"
@@ -118,7 +134,7 @@ export const MensPro = () => {
                     />
                     <label htmlFor="under50">$200 and Over</label>
                   </div>
-                </form>
+               
               </div>
             </div>
           </div>
