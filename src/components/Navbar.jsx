@@ -101,15 +101,163 @@ export const Navbar = ({cartToggle,setCartToggle}) => {
               </div>
             </div>
           </div>
-          <div>
+          <div className={styles.dropdown}>
             Women <RiArrowDropDownFill />
+            <div className={styles.dropdownContent}>
+              <div>
+                <p className={styles.dropdownHead}>Shoes</p>
+                <p>Sneakers & Athletic</p>
+                <p>Sandals</p>
+                <p>Clogs & Mules</p>
+                <p>Heels</p>
+                <p>Boots & Booties</p>
+                <p>Slippers</p>
+                <p>Flats</p>
+                <p>Loafers</p>
+                <p>Comfort</p>
+                <p>Wide</p>
+                <p>Narrow</p>
+                <p>Single Shoes</p>
+                <p>Shop All Shoes</p>
+              </div>
+              <div>
+                <p className={styles.dropdownHead}>Clothing</p>
+                <p>Shirts & Tops</p>
+                <p>Swimwear</p>
+                <p>Dresses</p>
+                <p>Shorts</p>
+                <p>Jeans & Denim</p>
+                <p>Underwear & Intimates</p>
+                <p>Coats & Outerwear</p>
+                <p>Socks</p>
+                <p>Sleepwear</p>
+                <p>Activewear</p>
+                <p>Plus Size</p>
+              </div>
+              <div>
+                <p className={styles.dropdownHead}>Accessories & More</p>
+                <p>Bags & Handbags</p>
+                <p>Backpacks</p>
+                <p>Belt Bags</p>
+                <p>Hair</p>
+                <p>Sunglasses</p>
+                <p>Statement Earrings</p>
+                <p>Face Masks</p>
+                <p>Hats</p>
+              </div>
+              <div>
+                <p className={styles.dropdownHead}>Featured</p>
+                <p>The Find</p>
+                <p>The Style Room</p>
+                <p>UFC Shop</p>
+                <p>Female Founded</p>
+                <p>Influencer Favourites</p>
+                <p>Spring Sandal Guide</p>
+                <p>Wedding Shop</p>
+              </div>
+            </div>
           </div>
-          <div>
+          <div className={styles.dropdown}>
             Men
             <RiArrowDropDownFill />
+            <div className={styles.dropdownContent}>
+              <div>
+                <p className={styles.dropdownHead}>Shoes</p>
+                <p>Sneakers & Athletic</p>
+                <p>Boots</p>
+                <p>Running Shoes</p>
+                <p>Oxfords</p>
+                <p>Loafers</p>
+                <p>Clogs</p>
+                <p>Slippers</p>
+              </div>
+              <div>
+                <p className={styles.dropdownHead}>Clothing</p>
+                <p>Shirts & Tops</p>
+                <p>Shorts</p>
+                <p>Swimwear</p>
+                <p>Pants</p>
+                <p>Jeans</p>
+                <p>Underwear</p>
+                <p>Activewear</p>
+                <p>Hoodies & Sweatshirts</p>
+                <p>Big & Tall</p>
+              </div>
+              <div>
+                <p className={styles.dropdownHead}>Accessories & More</p>
+                <p>Bags</p>
+                <p>Hats</p>
+                <p>Sunglasses</p>
+                <p>Belts</p>
+                <p>Watches</p>
+                <p>Ties & Pocket Squares</p>
+                <p>Gloves</p>
+                <p>Wallets</p>
+              </div>
+              <div>
+                <p className={styles.dropdownHead}>Featured</p>
+                <p>The Style Room</p>
+                <p>The Fan Shop</p>
+                <p>Big & Tall</p>
+                <p>UFC Shop</p>
+                <p>Flatheads</p>
+                <p>Men's Golf Shoes & Clothing</p>
+                <p>Penny Luck</p>
+                <p>Fitville</p>
+                <p>Breath Walker</p>
+                <p>c9 Champion: $40 and Under</p>
+              </div>
+            </div>
           </div>
-          <div>
+          <div className={styles.dropdown}>
             Kids <RiArrowDropDownFill />
+            <div className={styles.dropdownContent}>
+              <div>
+                <p className={styles.dropdownHead}>Girls</p>
+                <p>Sneakers</p>
+                <p>Sandals</p>
+                <p>Swimwear</p>
+                <p>Flats</p>
+                <p>Shirts & Tops</p>
+                <p>Dresses</p>
+                <p>Heels</p>
+                <p>Shorts</p>
+                <p>Clogs</p>
+                <p>Light Jackets</p>
+                <p>Boots</p>
+                <p>Shop All Girls</p>
+              </div>
+              <div>
+                <p className={styles.dropdownHead}>Boys</p>
+                <p>Sneakers</p>
+                <p>Sandals</p>
+                <p>Swimwear</p>
+                <p>Shirts & Tops</p>
+                <p>Pants</p>
+                <p>Dresses</p>
+                <p>Heels</p>
+                <p>Shorts</p>
+                <p>Clogs</p>
+                <p>Light Jackets</p>
+                <p>Boots</p>
+                <p>Shop All Boys</p>
+              </div>
+              <div>
+                <p className={styles.dropdownHead}>Accessories</p>
+                <p>Backpacks</p>
+                <p>Sunglasses</p>
+                <p>Hats</p>
+                <p>Toys & Games</p>
+              </div>
+              <div>
+                <p className={styles.dropdownHead}>Top Brands</p>
+                <p>Vans Kids</p>
+                <p>Crocs Kids</p>
+                <p>Native Kids</p>
+                <p>adidas Kids</p>
+                <p>SKECHERS KIDS</p>
+              </div>
+            </div>
           </div>
           <div>
             Departments <RiArrowDropDownFill />
