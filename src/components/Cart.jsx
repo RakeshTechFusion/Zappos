@@ -1,7 +1,8 @@
 import React, { useRef } from 'react'
 import { CartSidebar, EmptyImage, EmptyCart, SidbarHeading, EmptyCartLink, CheckoutButtonDiv, CheckoutButton1, CheckoutButton2 } from '../Styled/cartSyled'
 import closeCart from '../cart/closeCart'
-import { CartProduct } from '../cart/CartProduct'
+import { CartProduct } from '../cart/CartProduct';
+import {Checkout} from './CheckOut/Checkout'
 
 
 export const Cart = ({ cartToggle, setCartToggle }) => {
@@ -12,6 +13,12 @@ export const Cart = ({ cartToggle, setCartToggle }) => {
   console.log(CartData)
   const $sideBarRef = useRef()
   closeCart($sideBarRef, () => setCartToggle(false))
+  const handleCheckout = ({TotalPrice})=>{
+    console.log("hii")
+    console.log(TotalPrice);
+    setCartToggle(false)
+    return (navigate("/checkout"));
+  }
   return (
     <CartSidebar ref={$sideBarRef} className={cartToggle ? "expand" : "shrink"}>
       <SidbarHeading>
@@ -46,7 +53,7 @@ export const Cart = ({ cartToggle, setCartToggle }) => {
           <CheckoutButtonDiv>
             <p style={{ lineHeight: "2px", fontSize: "15px", marginLeft: "20%" }}>Cart Subtotal ({CartData.length} {CartData.length === 1 ? "item" : "items"}) $ {TotalPrice}.00</p>
             <CheckoutButton1> VIEW CART</CheckoutButton1>
-            <CheckoutButton2> PROCEED TO CHECKOUT</CheckoutButton2>
+            <CheckoutButton2 onClick={()=> handleCheckout(TotalPrice)}> PROCEED TO CHECKOUT</CheckoutButton2>
           </CheckoutButtonDiv>
         </div>
 
