@@ -25,7 +25,7 @@ const Shipping_address = () => {
     }
     const handleSubmit = (e)=>{
         e.preventDefault();
-        console.log(address);
+        // console.log(address);
         const newRecord = {...address, id : uuidv4()}
         console.log("before",records);
         setRecords([...records, newRecord])
@@ -33,7 +33,7 @@ const Shipping_address = () => {
         localStorage.setItem("shippingAddress" , JSON.stringify(records));
         setAddress({country : "", fullname : "", address_line1 : "", address_line2 : "", city : "", state : "", zip : "", phoneNo : "",})
     }
-    console.log(styles);
+    // console.log(styles);
   
     return (
     <div className={styles.mainCont}> 
