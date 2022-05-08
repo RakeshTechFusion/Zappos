@@ -1,0 +1,33 @@
+.parent{
+    /* border: 1px solid red; */
+    padding: 5px;
+}
+.parent>div{
+    /* border: 1px solid red; */
+    height: 250px;
+    background-color: whitesmoke;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.parent .type{
+    font-weight: 600;
+    font-size: 17px;
+    margin-top: -20px;
+}
+.parent .price{
+    color: rgb(0, 57, 83) ;
+    margin-top: -20px;
+    font-size: 16px;
+}
+.parent :hover{
+    color: #1183d6;
+    cursor: pointer;
+}
+.parent .rating{
+    margin-bottom: 5px;
+    font-size: 16px;
+}
+.parent .name{
+    font-size: 16px;
+}

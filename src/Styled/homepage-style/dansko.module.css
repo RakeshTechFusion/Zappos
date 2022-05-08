@@ -1,0 +1,38 @@
+.dansko {
+  /* border: 1px solid black; */
+  height: 800px;
+  display: flex;
+  padding: 30px;
+}
+.dansko > div:first-child {
+  width: 30%;
+}
+.dansko > div:last-child {
+  width: 70%;
+  display: grid;
+  margin-left: 2%;
+  grid-template-columns: repeat(4,21%);
+  column-gap: 4%;
+}
+
+.dansko img {
+  width: 100%;
+}
+.dansko h1 {
+  font-size: 26px;
+}
+.dansko button {
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: 700;
+    background-color: #fff;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin-bottom: 30px;
+    margin-top: 10px;
+}
+.dansko>div:first-child>div:first-child :hover {
+    background-color: #000;
+    color: #fff;
+    transition: all ease-in-out .3s;
+}

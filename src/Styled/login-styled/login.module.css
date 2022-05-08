@@ -1,0 +1,11 @@
+.parentBtn {
+  display: grid;
+  grid-template-columns: repeat(2, 40%);
+  grid-gap: 5%;
+}
+.parentBtn button {
+  width: 90%;
+  background-color: white;
+  color: black;
+  margin: 2% 10%;
+}

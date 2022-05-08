@@ -1,0 +1,38 @@
+.popCate{
+    /* border: 1px solid black; */
+    padding: 24px;
+    height: 370px;
+}
+.popCate h1{
+    font-size: 24px;
+}
+.flexBox{
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: space-between;
+}
+.flexChild{
+    /* border: 1px solid red; */
+    width: 16%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.longImg{
+    width: 60%;
+}
+.shortImg{
+    width: 100%;
+}
+.flexChild p{
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+}
+.flexChild :hover{
+    cursor: pointer;
+    text-decoration: underline;
+    color: #1183d6;
+}

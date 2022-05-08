@@ -1,0 +1,36 @@
+.newArrival {
+  height: 680px;
+  /* border: 1px solid black; */
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-between;
+  padding: 24px;
+}
+.newArrival > div {
+  width: 49%;
+  height: 100%;
+  /* border: 1px solid red; */
+  cursor: pointer;
+}
+.backImg {
+  background-image: url("https://m.media-amazon.com/images/G/01/2022/homepage5.02/COOP-UGG-NEW-ARRIVALS-DESKTOP-LEFT-1X-634x634_1.jpg");
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 6%;
+}
+.backImg p {
+  font-size: 18px;
+  text-align: center;
+  font-weight: 500;
+  margin-top: 2%;
+}
+.backImg button {
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: 700;
+  background-color: rgb(243,247,111);
+  padding: 10px 20px;
+  cursor: pointer;
+}
