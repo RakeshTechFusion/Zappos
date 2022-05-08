@@ -1,0 +1,10 @@
+.miniCont{
+    display: flex;
+   justify-content: space-between;
+}
+.promoCodeDiv{
+    display: flex;
+    gap : 10px;
+    
+
+}
