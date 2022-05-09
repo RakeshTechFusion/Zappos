@@ -68,7 +68,6 @@ First you have to have to go to the `Home Page`. There you have to click on acco
 - `CSS`
 
 ---[Blog Link](https://medium.com/@preetbhardwaj517/zappos-clone-c0cc65c7dbd3)
----[]
 
 
 
