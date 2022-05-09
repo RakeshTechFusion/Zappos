@@ -75,7 +75,7 @@ First you have to have to go to the `Home Page`. There you have to click on acco
 
 # Home Page
 Here you can find brief history of the products and website
- https://miro.medium.com/max/1400/1*qpLpp4niJB1esWy_l8vPoQ.jpeg
+ ![10](https://miro.medium.com/max/1400/1*qpLpp4niJB1esWy_l8vPoQ.jpeg)
     
 
 
