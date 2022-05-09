@@ -4,10 +4,13 @@ This is a team project, built by us in the Construct Week in Unit-4 at Masai Sch
 
 
 some snapshot of our website
-![Capture](Image1)
-![3](Image2)
+![Capture](https://miro.medium.com/max/1400/1*qpLpp4niJB1esWy_l8vPoQ.jpeg)
 
-![6](Image3)
+---------
+![3](https://miro.medium.com/max/1400/1*_XG6U5eTXUMDVBqty436Vw.png)
+----------------
+
+![6](https://miro.medium.com/max/1400/1*C_RUduBHzqmEpykYLNsZJA.jpeg)
 
 
 ---
@@ -37,14 +40,14 @@ some snapshot of our website
 ### Pages & Features 👇
 
 - `Home Page`: Nav Bar with dropdowns, sliding banners & slider for offer.
-[homepage]()
+[homepage](https://miro.medium.com/max/1400/1*qpLpp4niJB1esWy_l8vPoQ.jpeg)
 - `Sign-Up`: User details stored in local storage.
 - `Sign-In`: User authentication to check whether user phone number and password match with details existing in the database.
 
-- `Product Category Page`: Women's products are created dynamically with filters by color,and category.
-[product]()
+- `Product Category Page`: All products are created dynamically with filters by color,and category.
+[product](https://miro.medium.com/max/1400/1*_XG6U5eTXUMDVBqty436Vw.png)
 - `Cart`: Users can see or remove products added to the cart.
-[cart]()
+[cart](https://miro.medium.com/max/1400/1*l5Vw-WvaeMfvioQt5CuMPg.jpeg)
 - `Checkout Page`: Users can add the delivery address.
 - `Payment Page`: Users can add their payment details.
 - `Order Successful`: cart gets empty automatically in local storage, once the user lands on this page.
@@ -64,7 +67,7 @@ First you have to have to go to the `Home Page`. There you have to click on acco
 - `Bootstrap`
 - `CSS`
 
----[Blog Link]
+---[Blog Link](https://medium.com/@preetbhardwaj517/zappos-clone-c0cc65c7dbd3)
 ---[]
 
 
@@ -73,7 +76,7 @@ First you have to have to go to the `Home Page`. There you have to click on acco
 
 # Home Page
 Here you can find brief history of the products and website
- 
+ https://miro.medium.com/max/1400/1*qpLpp4niJB1esWy_l8vPoQ.jpeg
     
 
 
@@ -81,27 +84,27 @@ Here you can find brief history of the products and website
 # Add to Cart
 In this Page, You can add the products to the Cart
 
-![8](Cart-image)
+![8](https://miro.medium.com/max/1400/1*l5Vw-WvaeMfvioQt5CuMPg.jpeg)
 
 
 
 
 # Sign-Up Page
 if you want buy any product you need sign up first and login with details then only you can buy
-
+![9](https://miro.medium.com/max/1400/1*Nc6TY2a_RtwD5ZudCj_AdA.jpeg)
 
 
 
 
 # Products Page
 In this page, you can find all details of the product like price of the product and some basic information about products.
-![2]()
+![2](https://miro.medium.com/max/1400/1*_XG6U5eTXUMDVBqty436Vw.png)
 
 
 
- # Payment Page
-In this page, If you want to purchase the product, you need fill some details regarding card details and here you also find how the discount you get, how much you need to pay and address
-
+ # Checkout Page
+In this page, If you want to purchase the product, you need fill some details regarding shipping addressa and card details and here you also find how the discount you get, how much you need to pay and address
+![](https://miro.medium.com/max/1400/1*C_RUduBHzqmEpykYLNsZJA.jpeg)
 
 
 
