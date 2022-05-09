@@ -110,7 +110,5 @@ In this page, If you want to purchase the product, you need fill some details re
 
 ****deploy link***
 
-[project Deploy link of netify]()
+[project Deploy link of netify](https://dynamic-strudel-3a04dd.netlify.app/)
 
-
-[Project Deploy Link]()
